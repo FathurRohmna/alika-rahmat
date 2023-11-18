@@ -1,0 +1,76 @@
+---
+import FlowerSide from '../../images/flower-side.svg'
+import SeparatorName from '../../images/separate-name.svg'
+---
+
+<section class="relative w-full h-full min-h-screen 2xl:max-w-7xl mx-auto">
+  <img
+    src={FlowerSide.src}
+    width="374"
+    height="445"
+    alt="flower"
+    class="absolute left-0 top-0"
+  />
+  <img
+    src={FlowerSide.src}
+    width="374"
+    height="445"
+    alt="flower"
+    class="absolute right-0 top-0 transform scale-x-[-1]"
+  />
+  <div class="relative transform translate-y-[375px] lg:translate-y-0 w-full text-center px-4 pt-32 container mx-auto flex flex-col justify-between">
+    <div class="relative w-full">
+      <div class="">
+        <p>بِسْــــــــــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ</p>
+        <p>Assalamu’alaikum Warahmatullahi Wabarakatuh</p>
+      </div>
+      <p class="max-w-xl w-full mx-auto mt-10">Dengan memohon Ridho dan Rahmat Allah SWT, kami 
+        mengharapkan  kehadiran Bapak/Ibu/Saudara/i pada
+        acara pernikahan kami</p>
+    </div>
+    <div class="relative my-48 mx-auto max-w-3xl space-y-8">
+      <div class="space-y-4">
+        <h1 class="text-6xl font-extrabold">Alika Febriant</h1>
+        <h3>Putri Bapak Turino dan Ibu Daryati</h3>
+      </div>
+      <img
+        src={SeparatorName.src}
+        width="708"
+        height="42"
+        alt="separator"
+      />
+      <div class="space-y-4">
+        <h1 class="text-6xl font-extrabold">Rahmat Riyadi</h1>
+        <h3>Putri Bapak Karwono dan Ibu Kasiem</h3>
+      </div>
+    </div>
+    <div class="text-left max-w-2xl mx-auto space-y-20 mb-56">
+      <div class="space-y-10">
+        <span>akad & nikah</span>
+        <div class="font-extrabold text-5xl space-y-2">
+          <h2>Jumat,</h2>
+          <h2>1 Desember 2023</h2>
+        </div>
+        <div class="relative flex flex-col gap-2">
+          <label for="" class="grid grid-cols-2 md:grid-cols-[217px_auto]">
+            <span class="italic">AKAD NIKAH</span>
+            08.00 - 10.00 WIB
+          </label>
+          <label for="" class="grid grid-cols-2 md:grid-cols-[217px_auto]">
+            <span class="italic">RESEPSI</span>
+            10.00 WIB - selesai
+          </label>
+        </div>
+      </div>
+      <div class="space-y-8">
+        <span>lokasi</span>
+        <p class="max-w-2xl">Kediaman mempelai wanita, Jl Karangbawang kawunganten,
+          RT 08/05 (Belakang Kantor Kecamatan Kawunganten), 
+          Kab. Cilacap</p>
+        <div>
+          <a class="block mb-3 w-min whitespace-nowrap" href="https://maps.app.goo.gl/LKTZjYQ3YkZekURJ9" target="_blank"><i>buka dengan{' '}</i> <b class="underline">Google Maps</b></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
