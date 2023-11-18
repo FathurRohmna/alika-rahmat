@@ -1,6 +1,7 @@
 ---
 import Flower from '../../images/flower.svg'
 import Separator from '../../images/separate-line.svg'
+import ToReceiverParam from '../react/ToReceiverParam';
 ---
 
 <section class="w-full container mx-auto px-4 pt-14 flex flex-col justify-between h-full min-h-screen 2xl:min-h-full">
@@ -20,7 +21,7 @@ import Separator from '../../images/separate-line.svg'
   </div>
   <div class="my-40 relative text-center">
     <h4 class="text-xl">Kepada Yth.</h4>
-    <h1 class="text-2xl mt-3 font-semibold">Fathur Rohman & Teman</h1>
+    <ToReceiverParam client:only />
     <p class="mt-24">kami undang anda untuk menghadiri resepsi pernikahan kami.</p>
   </div>
 </section>

@@ -1,5 +1,6 @@
 ---
 import AudioPlayer from '../components/react/AudioPlayer'
+import { SEO } from "astro-seo";
 
 interface Props {
 	title: string;
@@ -12,13 +13,66 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="Assalamualaikum wr.wb
+		Dengan memanjatkan puji syukur dan memohon Rahmat serta ridho Allah SWT. Kami bermaksud menyelenggarakan resepsi pernikahan kami. Yang insyaallah akan di laksanakan pada:
+		
+		Hari/Tgl : Jumat, 1 Desember 2023
+		Waktu.   : 08.00 wib s.d Selesai
+		Tempat   : Kediaman mempelai wanita, Jl Karangbawang kawunganten, RT 08/05 (Belakang Kantor Kecamatan Kawunganten), Kab. Cilacap
+		
+		Atas kehadirannya dan doa restu teman teman kami ucapkan terimakasih
+		
+		Wassalamu'alaikum wr.wb" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="preconnect" href="https://fonts.cdnfonts.com" />
 		<link href="https://fonts.cdnfonts.com/css/junge" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<SEO
+      title="Alika Febriant & Rahmat Riyadi Wedding"
+      description="Assalamualaikum wr.wb
+			Dengan memanjatkan puji syukur dan memohon Rahmat serta ridho Allah SWT. Kami bermaksud menyelenggarakan resepsi pernikahan kami. Yang insyaallah akan di laksanakan pada:
+			
+			Hari/Tgl : Jumat, 1 Desember 2023
+			Waktu.   : 08.00 wib s.d Selesai
+			Tempat   : Kediaman mempelai wanita, Jl Karangbawang kawunganten, RT 08/05 (Belakang Kantor Kecamatan Kawunganten), Kab. Cilacap
+			
+			Atas kehadirannya dan doa restu teman teman kami ucapkan terimakasih
+			
+			Wassalamu'alaikum wr.wb"
+      openGraph={{
+        basic: {
+          title: "Alika Febriant & Rahmat Riyadi Wedding",
+          type: "Wedding Invitation",
+          image: "/seo.png",
+        }
+      }}
+      twitter={{
+        creator: "@me"
+      }}
+      extend={{
+        link: [{ rel: "icon", href: "/favicon.svg" }],
+        meta: [
+          {
+            name: "twitter:image",
+            content: "/seo.png",
+          },
+          { name: "twitter:title", content: "Alika Febriant & Rahmat Riyadi Wedding" },
+          { name: "twitter:description", content: `Assalamualaikum wr.wb
+							Dengan memanjatkan puji syukur dan memohon Rahmat serta ridho Allah SWT. Kami bermaksud menyelenggarakan resepsi pernikahan kami. Yang insyaallah akan di laksanakan pada:
+							
+							Hari/Tgl : Jumat, 1 Desember 2023
+							Waktu.   : 08.00 wib s.d Selesai
+							Tempat   : Kediaman mempelai wanita, Jl Karangbawang kawunganten, RT 08/05 (Belakang Kantor Kecamatan Kawunganten), Kab. Cilacap
+							
+							Atas kehadirannya dan doa restu teman teman kami ucapkan terimakasih
+							
+							Wassalamu'alaikum wr.wb` 
+					},
+        ],
+      }}
+    />
 	</head>
 	<body>
 		<AudioPlayer client:only />
