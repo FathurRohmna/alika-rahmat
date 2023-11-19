@@ -6,7 +6,7 @@ const ToReceiverParamGenerator = () => {
   const params = new URLSearchParams({
     to: value,
   });
-  const invitationCode = `${window.location.host}/?${params}`
+  const invitationCode = `https://${window.location.host}/?${params}`
 
   const onSalin = () => {
     setCopied(true);
