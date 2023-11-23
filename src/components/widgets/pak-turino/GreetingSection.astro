@@ -1,8 +1,8 @@
 ---
-import Flower from '../../images/flower.svg'
-import BankAccontNumber from '../BankAccontNumber.astro'
-import BRI from '../../images/bri.png'
-import Mandiri from '../../images/mandiri.webp'
+import Flower from '../../../images/flower.svg'
+import BankAccontNumber from '../../BankAccontNumber.astro'
+import BRI from '../../../images/bri.png'
+import Mandiri from '../../../images/mandiri.webp'
 ---
 
 <section class="w-full container mx-auto px-4 flex flex-col justify-between h-full min-h-screen 2xl:min-h-full">
@@ -22,25 +22,38 @@ import Mandiri from '../../images/mandiri.webp'
       <p class="max-w-2xl mx-auto text-center mt-36 md:mt-24">Doa restu Anda merupakan karunia yang sangat berarti bagi kami.<br>
         Dan jika memberi adalah ungkapan kasih Anda, Anda dapat memberikan secara cashless.<br>
       </p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 w-full max-w-2xl gap-6 md:gap-4 mt-12 md:mt-8 z-30">
-        <BankAccontNumber holderName='Alika Febrianti' accountNumber="002201079851501">
-          <img
-            slot="bank-logo"
-            src={BRI.src}
-            width="120"
-            height="50"
-            alt="BRI" 
-          />
-        </BankAccontNumber>
-        <BankAccontNumber holderName='Rahmat Riyadi' accountNumber={1800006731089}>
-          <img
-            slot="bank-logo"
-            src={Mandiri.src}
-            width="97"
-            height="28"
-            alt="BRI" 
-          />
-        </BankAccontNumber>
+      <div class="grid grid-cols-1 gap-6 md:gap-4 w-full max-w-2xl mt-12 md:mt-8 z-30">
+        <div class="w-full">
+          <BankAccontNumber holderName='Turino' accountNumber={1800012505212}>
+            <img
+              slot="bank-logo"
+              src={Mandiri.src}
+              width="97"
+              height="28"
+              alt="BRI" 
+            />
+          </BankAccontNumber>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-4">
+          <BankAccontNumber holderName='Alika Febrianti' accountNumber="002201079851501">
+            <img
+              slot="bank-logo"
+              src={BRI.src}
+              width="120"
+              height="50"
+              alt="BRI" 
+            />
+          </BankAccontNumber>
+          <BankAccontNumber holderName='Rahmat Riyadi' accountNumber={1800006731089}>
+            <img
+              slot="bank-logo"
+              src={Mandiri.src}
+              width="97"
+              height="28"
+              alt="BRI" 
+            />
+          </BankAccontNumber>
+        </div>
       </div>
     </div>
     <p class="mt-24">Atas do'a dan restunya, kami ucapkan terimakasih.</p>

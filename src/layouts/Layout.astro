@@ -4,9 +4,10 @@ import { SEO } from "astro-seo";
 
 interface Props {
 	title: string;
+	seoImage: string;
 }
 
-const { title } = Astro.props;
+const { title, seoImage } = Astro.props;
 ---
 
 <!doctype html>
@@ -27,7 +28,7 @@ const { title } = Astro.props;
         basic: {
           title: "Alika Febrianti & Rahmat Riyadi Wedding",
           type: "Wedding Invitation",
-          image: "https://github.com/FathurRohmna/alika-rahmat/assets/55587102/4fe3f8f2-f7e8-463f-a7ad-5650c4ca87cf",
+          image: seoImage,
         }
       }}
       twitter={{
@@ -38,7 +39,7 @@ const { title } = Astro.props;
         meta: [
           {
             name: "twitter:image",
-            content: "https://github.com/FathurRohmna/alika-rahmat/assets/55587102/4fe3f8f2-f7e8-463f-a7ad-5650c4ca87cf",
+            content: seoImage,
           },
           { name: "twitter:title", content: "Alika Febrianti & Rahmat Riyadi Wedding" },
           { name: "twitter:description", content: "Assalamualaikum wr.wb\nDengan memanjatkan puji syukur dan memohon Rahmat serta ridho Allah SWT. Kami bermaksud menyelenggarakan resepsi pernikahan kami. Yang insyaallah akan di laksanakan pada:\n\nHari/Tgl : Jumat, 1 Desember 2023\nWaktu.   : 08.00 wib s.d Selesai\nTempat   : Kediaman mempelai wanita, Jl Karangbawang kawunganten, RT 08/05 (Belakang Kantor Kecamatan Kawunganten), Kab. Cilacap\n\nAtas kehadirannya dan doa restu teman teman kami ucapkan terimakasih\nWassalamu'alaikum wr.wb"
