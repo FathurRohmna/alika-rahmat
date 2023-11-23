@@ -1,0 +1,31 @@
+---
+import LikTur from '../../images/fotos/lik-tur.png'
+import AlikaRahmat from '../../images/fotos/alika-rahmat.png'
+---
+
+<section class="w-full container mx-auto px-4 flex flex-col justify-between h-full min-h-screen 2xl:min-h-full">
+  <div class="w-full flex justify-center items-center flex-col mt-64 mb-8 lg:mt-0 max-w-2xl mx-auto">
+    <h2 class="italic text-lg mb-10">Wedding</h2>
+    <div class="flex flex-col md:flex-row gap-4 items-center my-6">
+      <div>
+        <img
+          slot="bank-logo"
+          src={AlikaRahmat.src}
+          width="527"
+          height="643"
+          alt="BRI" 
+        />
+      </div>
+      <div>
+        <img
+          slot="bank-logo"
+          src={LikTur.src}
+          width="289"
+          height="534"
+          alt="BRI" 
+        />
+      </div>
+    </div>
+    <h5 class="italic text-lg mt-10">Alika & Rahmat</h5>
+  </div>
+</section>
