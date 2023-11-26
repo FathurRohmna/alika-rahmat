@@ -1,31 +1,44 @@
 ---
 import LikTur from '../../images/fotos/lik-tur.png'
 import AlikaRahmat from '../../images/fotos/alika-rahmat.png'
+import SeparatorFotos from '../../images/separate-fotos.svg'
 ---
 
 <section class="w-full container mx-auto px-4 flex flex-col justify-between h-full min-h-screen 2xl:min-h-full">
-  <div class="w-full flex justify-center items-center flex-col mt-64 mb-8 lg:mt-0 max-w-2xl mx-auto">
-    <h2 class="italic text-lg mb-10">Wedding</h2>
-    <div class="flex flex-col md:flex-row gap-4 items-center my-6">
-      <div>
+  <div class="w-full flex justify-center items-center flex-col my-16 lg:mt-0 max-w-2xl mx-auto">
+    <div class="flex flex-col gap-32 items-center my-6">
+      <div class="text-center">
         <img
           slot="bank-logo"
           src={AlikaRahmat.src}
           width="527"
-          height="643"
+          height="441"
           alt="BRI" 
         />
+        <p class="mt-6 text-sm">Pengantin</p>
+        <h5 class="text-2xl mt-1 font-medium">Alika & Rahmat</h5>
       </div>
-      <div>
+      <div class="text-center">
         <img
           slot="bank-logo"
+          class="max-w-[280px]"
           src={LikTur.src}
-          width="289"
+          width="344"
           height="534"
           alt="BRI" 
         />
+        <p class="mt-6 text-sm">Pemilik hajat</p>
+        <h5 class="text-lg mt-1 font-medium">Bapak Turino & Ibu Daryati</h5>
+      </div>
+      <div class="mt-24 text-center">
+        <img
+          src={SeparatorFotos.src}
+          width="618"
+          height="221"
+          alt="flower"
+          class="text-center mt-3"
+        />
       </div>
     </div>
-    <h5 class="italic text-lg mt-10">Alika & Rahmat</h5>
   </div>
 </section>
