@@ -2,5 +2,5 @@
 import ToReceiverParamGenerator from '../../components/react/ToReceiverParamGenerator';
 ---
 <div class="relative w-full overflow-hidden">
-  <ToReceiverParamGenerator hostUrl={`https://${Astro.url.host}/pak-turino/`} client:only />
+  <ToReceiverParamGenerator hostUrl={`${Astro.url.origin}/pak-turino/`} client:only />
 </div>
