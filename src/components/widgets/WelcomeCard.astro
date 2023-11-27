@@ -2,6 +2,10 @@
 import Flower from '../../images/flower.svg'
 import Separator from '../../images/separate-line.svg'
 import ToReceiverParam from '../react/ToReceiverParam';
+
+const hrefUrl = Astro.url.href
+const pageIsForBapak =  hrefUrl.includes('pak-turino')
+const labelFor = pageIsForBapak ? 'pernikahan anak kami' : 'pernikahan kami'
 ---
 
 <section class="w-full container mx-auto px-4 pt-14 flex flex-col justify-between h-full min-h-screen 2xl:min-h-full">
@@ -22,6 +26,6 @@ import ToReceiverParam from '../react/ToReceiverParam';
   <div class="my-40 relative text-center">
     <h4 class="text-xl">Kepada Yth.</h4>
     <ToReceiverParam client:only />
-    <p class="mt-24">kami undang anda untuk menghadiri resepsi pernikahan anak kami.</p>
+    <p class="mt-24">kami undang anda untuk menghadiri resepsi {labelFor}.</p>
   </div>
 </section>

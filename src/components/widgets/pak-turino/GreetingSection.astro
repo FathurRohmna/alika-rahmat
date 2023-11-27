@@ -3,6 +3,10 @@ import Flower from '../../../images/flower.svg'
 import BankAccontNumber from '../../BankAccontNumber.astro'
 import BRI from '../../../images/bri.png'
 import Mandiri from '../../../images/mandiri.webp'
+
+const hrefUrl = Astro.url.href
+const pageIsForBapak =  hrefUrl.includes('pak-turino')
+const labelFor = pageIsForBapak ? 'pernikahan anak kami' : 'pernikahan kami'
 ---
 
 <section class="w-full container mx-auto px-4 flex flex-col justify-between h-full min-h-screen 2xl:min-h-full">
@@ -16,7 +20,7 @@ import Mandiri from '../../../images/mandiri.webp'
     />
     <p class="max-w-2xl mx-auto text-center mt-36 md:mt-24 min-h-[30vh]">Merupakan suatu kehormatan dan kebahagiaan bagi kami <br class="hidden md:block">
       apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan do'a restunya <br>
-      untuk keberkahan pernikahan anak kami. 
+      untuk keberkahan {labelFor}. 
     </p>
     <div class="min-h-screen">
       <p class="max-w-2xl mx-auto text-center mt-36 md:mt-24">Doa restu Anda merupakan karunia yang sangat berarti bagi kami.<br>
