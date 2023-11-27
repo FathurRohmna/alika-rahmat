@@ -2,5 +2,5 @@
 import ToReceiverParamGenerator from '../components/react/ToReceiverParamGenerator';
 ---
 <div class="relative w-full overflow-hidden">
-  <ToReceiverParamGenerator client:only />
+  <ToReceiverParamGenerator hostUrl={`https://${Astro.url.host}/`} client:only />
 </div>

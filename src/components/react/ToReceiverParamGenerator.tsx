@@ -1,12 +1,16 @@
 import { useState } from 'react';
 
-const ToReceiverParamGenerator = () => {
+const ToReceiverParamGenerator = ({
+  hostUrl,
+}: {
+  hostUrl: string;
+}) => {
   const [value, setValue] = useState('');
   const [copied, setCopied] = useState(false);
   const params = new URLSearchParams({
     to: value,
   });
-  const invitationCode = `https://${window.location.host}/?${params}`
+  const invitationCode = `${hostUrl}?${params}`
 
   const onSalin = () => {
     setCopied(true);
